@@ -177,21 +177,3 @@ npm run build
 ## 📝 License
 
 This project is licensed under the ISC License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [Google Gemini API](https://ai.google.dev/) for providing the AI capabilities
-- [GitHub Actions](https://github.com/features/actions) for the automation platform
-- [@vercel/ncc](https://github.com/vercel/ncc) for bundling the code
-
-## 📞 Support
-
-If you encounter any issues or have questions:
-
-1. Check the [Issues](https://github.com/your-username/ai-code-review-bot/issues) page
-2. Create a new issue with detailed information
-3. Include logs and error messages if applicable
-
----
-
-**Made with ❤️ by [Ratan Gulati](https://github.com/your-username)**
