@@ -5,11 +5,11 @@
   "scripts": {
     "build": "ncc build src/index.ts -o dist",
     "build:watch": "ncc build src/index.ts -o dist --watch",
-    "clean": "rm -rf dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf dist lib",
+    "all": "npm run clean && npm run build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ratan Gulati",
   "license": "ISC",
   "description": "",
   "dependencies": {

@@ -1,16 +1,17 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "CommonJS",
-    "moduleResolution": "Node",
-    "lib": ["ES2020"],
+    "target": "ES2019",
+    "module": "commonjs",
+    "outDir": "./lib",
+    "rootDir": "./src",
     "strict": true,
-    "outDir": "dist",
     "esModuleInterop": true,
     "skipLibCheck": true
   },
-  "include": ["src"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
+
 
 // {
 //   // Visit https://aka.ms/tsconfig to read more about this file
