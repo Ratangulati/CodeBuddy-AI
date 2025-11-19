@@ -1,24 +1,25 @@
 {
-  "name": "ai-code-review-bot",
+  "name": "codebuddy-ai",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Your friendly AI code reviewer powered by Google Gemini",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "ncc build src/index.ts -o dist",
-    "build:watch": "ncc build src/index.ts -o dist --watch",
+    "build": "tsc && ncc build lib/index.js -o dist",
+    "build:watch": "ncc build lib/index.js -o dist --watch",
     "clean": "rm -rf dist lib",
     "all": "npm run clean && npm run build"
   },
-  "keywords": [],
-  "author": "Ratan Gulati",
-  "license": "ISC",
-  "description": "",
+  "keywords": ["github-actions", "ai", "code-review", "gemini"],
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/github": "^6.0.1",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^2.7.0"
   },
   "devDependencies": {
-    "@types/node": "^24.3.0",
+    "@types/node": "^20.14.0",
+    "@types/node-fetch": "^2.6.11",
     "@vercel/ncc": "^0.38.3",
     "typescript": "^5.9.2"
   }
