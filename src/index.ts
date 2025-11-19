@@ -121,8 +121,7 @@ Format your response in a clear, structured way that will be helpful for the dev
 }
 
 async function getGeminiReview(prompt: string, apiKey: string): Promise<string> {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
-  
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${apiKey}`;
   try {
     const response = await fetch(url, {
       method: "POST",
