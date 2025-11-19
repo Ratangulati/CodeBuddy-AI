@@ -13,12 +13,10 @@ jobs:
       issues: write
     
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
       
-      - name: AI Code Review
+      - name: Run CodeBuddy AI
         uses: ./
         with:
           gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
